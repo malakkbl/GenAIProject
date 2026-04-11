@@ -1,60 +1,36 @@
-# GraphRAG for Social Sciences
-
-## Team
-- Malak Kably
-- Safae Hajjout
+# GraphRAG for Financial News
+**Team**: Malak Kably, Safae Hajjout
+**Dataset**: Bloomberg Financial News 120K — `Headline`, `Article`, `Date`, `Journalists`, `Link`
 
 ---
 
-## Step 1: Dataset Selection
+## Pipeline
 
-We selected the following dataset for our project:
-
-- **Dataset**: Bloomberg Financial News (120K articles)  
-- **Source**: https://huggingface.co/datasets/XJCEO/bloomberg_financial_news_120k 
-
-### Why this dataset?
-- Contains large-scale **financial and economic news**
-- Rich in **entities (companies, policies, markets)**
-- Suitable for **knowledge graph construction and reasoning**
-
----
-
-## Step 2: Project Scope
-
-### Domain
-Financial and Economic News
-
-### Context
-We aim to build a system that can understand and reason over financial news articles by extracting structured knowledge and using it to answer complex questions.
-
-### Problem Statement
-Build a **GraphRAG-based system** that:
-- Extracts entities and relationships from financial news
-- Constructs a knowledge graph
-- Uses graph-based retrieval to improve LLM question answering
-- Enables **multi-hop reasoning over economic events and entities**
+| # | Phase | Status | Output |
+|---|-------|--------|--------|
+| 1 | Dataset Selection | ✅ | Bloomberg 120K chosen |
+| 2 | Literature Review | 🔄 | Papers on GraphRAG, entity/relation extraction |
+| 3 | Entity & Relation Extraction | ⬜ | Triples: `(entity1, relation, entity2)` |
+| 4 | Knowledge Graph Construction | ⬜ | Graph: nodes = entities, edges = relations |
+| 5 | GraphRAG Retrieval | ⬜ | Subgraph + text chunks per query |
+| 6 | LLM Integration | ⬜ | Answers from graph context |
+| 7 | Evaluation | ⬜ | GraphRAG vs RAG vs LLM-only |
+| 8 | Demo | ⬜ | Streamlit/Gradio interface |
 
 ---
 
-## Step 3: Literature Review
+## Key Decisions
 
-### GraphRAG Overview
-GraphRAG extends traditional RAG by incorporating **knowledge graphs** to structure and retrieve information more effectively.
-
-Instead of retrieving flat text chunks:
-- It retrieves **connected knowledge**
-- Enables **multi-hop reasoning**
-- Improves **explainability**
+| What | Choice |
+|------|--------|
+| Entity extraction | spaCy NER |
+| Relation extraction | LLM-based prompting (regex failed in exploration) |
+| Graph library | NetworkX (prototype) → Neo4j (scale) |
+| LLM | Claude API |
+| Evaluation | Accuracy + faithfulness on curated Q&A pairs |
 
 ---
 
-### Key Ideas
-- Combine:
-  - LLMs (generation)
-  - Knowledge Graphs (structure)
-  - Retrieval (context selection)
-
-- Pipeline:
-Documents → Entities/Relations → Knowledge Graph → Graph Retrieval → LLM
-
+## Files
+- [Dataset_Exploration.ipynb](Dataset_Exploration.ipynb) — Phase 1
+- [EntityExtractionPapers/](EntityExtractionPapers/) — Phase 2
