@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GraphRAG · Financial Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Three answers.<br>One question.</h1>
+    <p class="hero-sub">Pure LLM &middot; Vanilla RAG &middot; GraphRAG &mdash; scored side by side.</p>
+  </section>
+
+  <!-- Input -->
+  <section class="input-section">
+    <div class="input-wrap">
+      <textarea id="question-input" placeholder="Ask a financial question&hellip;" rows="1"></textarea>
+      <button id="ask-btn" onclick="runQuery()">
+        <span id="btn-label">Ask</span>
+        <span id="btn-spinner" class="spinner hidden"></span>
+      </button>
+    </div>
+    <p id="error-msg" class="error hidden"></p>
+  </section>
+
+  <!-- Question echo -->
+  <p id="question-echo" class="question-echo hidden"><span id="q-text"></span></p>
+
+  <!-- Results -->
+  <section class="results-grid">
+
+    <article class="panel" id="panel-llm">
+      <div class="panel-label">
+        <span class="ln">I</span>
+        <span class="lname">Pure LLM</span>
+        <span class="lhint">no retrieval</span>
+      </div>
+      <div class="panel-body">
+        <div class="skel hidden" id="skel-llm">
+          <div class="sl"></div><div class="sl s75"></div><div class="sl"></div><div class="sl s50"></div>
+        </div>
+        <p class="answer-text" id="ans-llm"></p>
+      </div>
+      <div class="panel-foot">
+        <div class="score-row">
+          <div class="score-track"><div class="score-fill sf-llm" id="bar-llm"></div></div>
+          <span class="score-num" id="score-llm">-</span>
+        </div>
+        <div class="foot-meta">
+          <span class="lat" id="lat-llm"></span>
+          <button class="sel-btn" id="sel-llm" onclick="selectAnswer('llm')">Select</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="panel" id="panel-rag">
+      <div class="panel-label">
+        <span class="ln">II</span>
+        <span class="lname">Vanilla RAG</span>
+        <span class="lhint">vector retrieval</span>
+      </div>
+      <div class="panel-body">
+        <div class="skel hidden" id="skel-rag">
+          <div class="sl"></div><div class="sl s75"></div><div class="sl"></div><div class="sl s50"></div>
+        </div>
+        <p class="answer-text" id="ans-rag"></p>
+        <div class="sources hidden" id="sources-rag"></div>
+      </div>
+      <div class="panel-foot">
+        <div class="score-row">
+          <div class="score-track"><div class="score-fill sf-rag" id="bar-rag"></div></div>
+          <span class="score-num" id="score-rag">-</span>
+        </div>
+        <div class="foot-meta">
+          <span class="lat" id="lat-rag"></span>
+          <span class="ret" id="ret-rag"></span>
+          <button class="sel-btn" id="sel-rag" onclick="selectAnswer('rag')">Select</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="panel panel--ours" id="panel-graph">
+      <div class="panel-label">
+        <span class="ln">III</span>
+        <span class="lname">GraphRAG</span>
+        <span class="lhint lhint--gold">our pipeline</span>
+      </div>
+      <div class="panel-body">
+        <div class="skel hidden" id="skel-graph">
+          <div class="sl"></div><div class="sl s75"></div><div class="sl"></div><div class="sl s50"></div>
+        </div>
+        <p class="answer-text" id="ans-graph"></p>
+        <div class="graph-ctx hidden" id="ctx-graph"></div>
+      </div>
+      <div class="panel-foot">
+        <div class="score-row">
+          <div class="score-track"><div class="score-fill sf-graph" id="bar-graph"></div></div>
+          <span class="score-num" id="score-graph">-</span>
+        </div>
+        <div class="foot-meta">
+          <span class="lat" id="lat-graph"></span>
+          <button class="sel-btn" id="sel-graph" onclick="selectAnswer('graph')">Select</button>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- Selected answer -->
+  <section class="selected-section hidden" id="selected-section">
+    <div class="selected-top">
+      <span class="selected-label" id="sel-tag"></span>
+      <button class="copy-btn" onclick="copySelected()">Copy</button>
+    </div>
+    <p id="selected-answer" class="selected-answer"></p>
+  </section>
+
+  <!-- Status -->
+  <p class="page-foot">
+    <span class="foot-dot" id="status-dot"></span>
+    <span id="status-label">Connecting&hellip;</span>
+  </p>
+
+</main>
+<script src="app.js"></script>
+</body>
+</html>
