@@ -1,34 +1,34 @@
-"""
-Pure LLM pipeline.
+"""Pure LLM pipeline backed by the actual Ollama model."""
 
-Replace the body of run_llm() with your actual pipeline logic.
-The function must return a dict with these keys:
-  - answer   (str)   the generated answer
-  - score    (float) quality score between 0 and 1
-  - latency  (float) time in milliseconds
-  - metadata (dict)  any extra info you want shown in the UI (optional)
-"""
+from __future__ import annotations
 
 import time
+
+from pipelines.common import ANSWER_MODEL, judge_score, ollama_generate
+
+
+ANSWER_PROMPT = """You are a precise financial analyst.
+Answer the question clearly and concisely using only your knowledge.
+If the answer is uncertain, say that you do not know.
+
+Question: {question}
+
+Answer:"""
 
 
 def run_llm(question: str) -> dict:
     t0 = time.perf_counter()
 
-    # ── Replace everything below this line with your real LLM call ──────────
-    answer = (
-        "Based on my training data, several major tech acquisitions were announced: "
-        "Microsoft acquired Activision Blizzard for $68.7 billion, "
-        "and Elon Musk was involved in major Tesla strategic moves. "
-        "However, without current context, I cannot provide specific dates or recent developments. "
-        "This answer lacks recent financial news context."
-    )
-    score = 0.52
-    # ────────────────────────────────────────────────────────────────────────
+    answer = ollama_generate(ANSWER_MODEL, ANSWER_PROMPT.format(question=question), timeout=90)
+    score = judge_score(question, answer, context=None)
 
     latency = (time.perf_counter() - t0) * 1000
     return {
         "answer":  answer,
         "score":   round(score, 3),
         "latency": round(latency, 2),
+        "metadata": {
+            "model": ANSWER_MODEL,
+            "mode": "pure_llm",
+        },
     }

@@ -3,7 +3,6 @@ from pipelines.llm_pipeline import run_llm
 from pipelines.rag_pipeline import run_rag
 from pipelines.graph_pipeline import run_graph
 import concurrent.futures
-import time
 
 query_bp = Blueprint("query", __name__)
 
