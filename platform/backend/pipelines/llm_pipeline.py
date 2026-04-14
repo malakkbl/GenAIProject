@@ -17,11 +17,13 @@ def run_llm(question: str) -> dict:
 
     # ── Replace everything below this line with your real LLM call ──────────
     answer = (
-        f"[Pure LLM stub] No retrieval was used. "
-        f"The model answered '{question}' from parametric memory only. "
-        f"Replace this stub with your Mistral / Ollama call."
+        "Based on my training data, several major tech acquisitions were announced: "
+        "Microsoft acquired Activision Blizzard for $68.7 billion, "
+        "and Elon Musk was involved in major Tesla strategic moves. "
+        "However, without current context, I cannot provide specific dates or recent developments. "
+        "This answer lacks recent financial news context."
     )
-    score = 0.50
+    score = 0.52
     # ────────────────────────────────────────────────────────────────────────
 
     latency = (time.perf_counter() - t0) * 1000
