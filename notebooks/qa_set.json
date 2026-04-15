@@ -1,0 +1,162 @@
+[
+  {
+    "qa_id": 0,
+    "article_id": 0,
+    "headline": "Marriott Cuts Profit Forecast as Demand Weakens Overseas",
+    "question": "What was Marriott's revised full-year profit forecast range after reporting second-quarter results?",
+    "reference_answer": "$1.92 to $2.03 a share",
+    "topic": "earnings|ma|personnel|market|policy|other"
+  },
+  {
+    "qa_id": 1,
+    "article_id": 250,
+    "headline": "Mvelaphanda, Brimstone Plan to List Health Interest on Johannesburg Bourse",
+    "question": "What is the percentage of direct holding that Mvelaphanda Group Ltd. will retain in Life Healthcare after the restructuring?",
+    "reference_answer": "A 26.6 percent direct holding",
+    "topic": "earnings|ma|personnel|market|policy|other"
+  },
+  {
+    "qa_id": 2,
+    "article_id": 500,
+    "headline": "Paragon Shipping Owes $24 Million on Dry-Bulk Commodity Vessel",
+    "question": "What is the amount Paragon Shipping Inc. owes on one of its dry-bulk commodity vessels as of Sept. 30, according to Robert J. Perri?",
+    "reference_answer": "$24 million",
+    "topic": "earnings|ma|personnel"
+  },
+  {
+    "qa_id": 3,
+    "article_id": 750,
+    "headline": "Obamacare Will Survive Its Botched Rollout",
+    "question": "What percentage of the U.S. gross domestic product was spent on health care in 2011?",
+    "reference_answer": "17.7 percent",
+    "topic": "earnings|ma|personnel|market|policy|other"
+  },
+  {
+    "qa_id": 4,
+    "article_id": 1000,
+    "headline": "Hildebrand Says SNB Will Defend Cap on Franc \u2018With Utmost Determination\u2019",
+    "question": "Will the Swiss National Bank defend the 1.20 franc cap on the Swiss franc versus the euro with utmost determination?",
+    "reference_answer": "Yes, according to Philipp Hildebrand, the SNB president.",
+    "topic": "earnings|ma|personnel"
+  },
+  {
+    "qa_id": 5,
+    "article_id": 1250,
+    "headline": "The Market Wants Apple to Unveil a Time Machine",
+    "question": "What was the main criticism of Apple's product lineup under Tim Cook compared to Steve Jobs' era?",
+    "reference_answer": "The constant refrain is that Apple has not introduced a disruptive product since Steve Jobs passed away.",
+    "topic": "earnings|ma|personnel|market|policy|other"
+  },
+  {
+    "qa_id": 6,
+    "article_id": 1500,
+    "headline": "Dixons Posts Loss on One-Time Costs",
+    "question": "What was the amount of one-time charges reported by Dixons Retail Plc in pounds?",
+    "reference_answer": "309.4 million",
+    "topic": "earnings|ma|personnel"
+  },
+  {
+    "qa_id": 7,
+    "article_id": 1750,
+    "headline": "London Property \u2018Less Frothy\u2019 as Asking Prices Fall: Economy",
+    "question": "What percentage decrease did London home sellers experience in asking prices from the previous month?",
+    "reference_answer": "4 percent",
+    "topic": "earnings|ma|personnel|market|policy|other"
+  },
+  {
+    "qa_id": 8,
+    "article_id": 2000,
+    "headline": "U.S. Awards $22.5 Million to Groups Developing Algae Biofuels",
+    "question": "How much money did the U.S. Energy Department award to FDC Enterprises Inc.?",
+    "reference_answer": "$6 million",
+    "topic": "earnings|ma|personnel"
+  },
+  {
+    "qa_id": 9,
+    "article_id": 2250,
+    "headline": "Treasuries Drop Most in 4 Months on Jobs, Fed Tapering Outlook",
+    "question": "What was the increase in payrolls in October compared to the median forecast of 91 economists?",
+    "reference_answer": "204,000",
+    "topic": "earnings|ma|personnel"
+  },
+  {
+    "qa_id": 10,
+    "article_id": 2500,
+    "headline": "Cuomo Pushing Computer Chips Aids Best N.Y. Rally: Muni Credit",
+    "question": "What is the name of the initiative announced by Governor Andrew Cuomo to bring atom-sized computer-chip research to Oneida County?",
+    "reference_answer": "nanotechnology",
+    "topic": "earnings|ma|personnel|market|policy|other"
+  },
+  {
+    "qa_id": 11,
+    "article_id": 2750,
+    "headline": "ICL Drops to Lowest in More Than 2 Years on Demand, Growth Risk",
+    "question": "What is the current price of ICL shares, and what is the lowest intraday level since July 2009?",
+    "reference_answer": "ICL shares declined 1.8 percent to 35.44 shekels at 11:43 a.m. in Tel Aviv, the lowest intraday level since July 2009.",
+    "topic": "earnings|ma|personnel|market|policy|other"
+  },
+  {
+    "qa_id": 12,
+    "article_id": 3000,
+    "headline": "New Jersey Credit Outlook Cut on Christie Revenue Targets",
+    "question": "What is the reason given by Standard & Poor's for potentially lowering New Jersey's credit rating?",
+    "reference_answer": "should state revenue projections turn out to be optimistic, resulting in additional short-term budgetary maneuvering to close the gap",
+    "topic": "earnings|ma|personnel|market|policy|other"
+  },
+  {
+    "qa_id": 13,
+    "article_id": 3250,
+    "headline": "India\u2019s Consumer-Price Inflation Accelerated to 9.47% in March",
+    "question": "What was the rate of India's consumer-price inflation in March?",
+    "reference_answer": "9.47%",
+    "topic": "earnings|ma|personnel|market|policy|other"
+  },
+  {
+    "qa_id": 14,
+    "article_id": 3500,
+    "headline": "AVERLOGIC TECHNO June Sales Rise 3.18% (Table) : 6198 TT",
+    "question": "What was the percentage increase in Averlogic Technology's unconsolidated sales from June 2010 to June 2011?",
+    "reference_answer": "3.18%",
+    "topic": "earnings|ma|personnel|market|policy|other"
+  },
+  {
+    "qa_id": 15,
+    "article_id": 3750,
+    "headline": "North Korea Disco Visit No Laughing Matter: Richard Vines",
+    "question": "What event prompted Richard Vines and John Sweeney, both graduates of the London School of Economics, to travel undercover with a group of students in North Korea?",
+    "reference_answer": "The BBC documentary 'North Korea Undercover' was broadcast despite the LSE's request not to, as the participants had apparently consented.",
+    "topic": "earnings|ma|personnel|market|policy|other"
+  },
+  {
+    "qa_id": 16,
+    "article_id": 4000,
+    "headline": "Russian Movers: Inter RAO UES, Magnitogorsk, Tatneft Are Active",
+    "question": "What was the percentage change of OAO Inter RAO UES stock price to its highest level since April 11?",
+    "reference_answer": "4.7 percent",
+    "topic": "earnings|ma|personnel|market|policy|other"
+  },
+  {
+    "qa_id": 17,
+    "article_id": 4250,
+    "headline": "Cyprus Economic Slump Deepens in Second Quarter on Bailout Deal",
+    "question": "What was the rate of decline in Cyprus's gross domestic product in the second quarter compared to the same period a year earlier?",
+    "reference_answer": "Non-seasonally adjusted GDP fell 5.4 percent from a year earlier.",
+    "topic": "earnings|ma|personnel|market|policy|other"
+  },
+  {
+    "qa_id": 18,
+    "article_id": 4500,
+    "headline": "Egypt September Core Consumer Prices Index: Summary",
+    "question": "What is the September core consumer prices index in urban areas from the Central Bank of Egypt?",
+    "reference_answer": "The article does not provide a specific number for the September core consumer prices index.",
+    "topic": "earnings|ma|personnel|market|policy|other"
+  },
+  {
+    "qa_id": 19,
+    "article_id": 4750,
+    "headline": "Qatar Banks Seek to Merge Islamic Units, Al-Sharq Says",
+    "question": "What is the reason why Qatar's conventional banks want to merge their Islamic units?",
+    "reference_answer": "Because the country's central bank ordered them to stop offering Shariah-compliant services by the end of the year.",
+    "topic": "earnings|ma|personnel"
+  }
+]

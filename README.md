@@ -1,5 +1,9 @@
 # Financial QA Comparison Platform
 
+**By students:** Malak Kably & Safae Hajjout
+**Supervised by:** Pr.Lamiae Azizi
+**Spring Semester 2026**
+
 This project studies how GraphRAG can improve question answering over financial news, and exposes the comparison through a small web application:
 
 1. Pure LLM QA, with no retrieval.
@@ -226,9 +230,9 @@ ollama pull llama3.2:3b
 
 Run the notebook benchmark pipeline in this order:
 
-1. [Baseline1_PureLLM.ipynb](notebooks/ForBenchmark/Baseline1_PureLLM.ipynb)
-2. [Baseline2_VanillaRAG.ipynb](notebooks/ForBenchmark/Baseline2_VanillaRAG.ipynb)
-3. [graph_generation.ipynb](notebooks/ForBenchmark/graph_generation.ipynb)
+1. [baseline_llm_model.ipynb](notebooks/baseline_llm_model.ipynb)
+2. [rag_model.ipynb](notebooks/rag_model.ipynb)
+3. [graphrag_model.ipynb](notebooks/graphrag_model.ipynb)
 
 The first notebook generates the shared `qa_set.json`. The other two consume it.
 

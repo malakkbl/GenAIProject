@@ -1,0 +1,614 @@
+{
+  "method": "Vanilla RAG (mistral-nemo + all-MiniLM-L6-v2, top-5)",
+  "n_questions": 20,
+  "chunk_size": 512,
+  "top_k": 5,
+  "faithfulness": 0.179,
+  "answer_relevance": 0.64,
+  "context_precision": 0.56,
+  "triad_avg": 0.45974999999999994,
+  "source_hit_rate": 0.8,
+  "mean_latency_ms": 30407.3,
+  "per_question": [
+    {
+      "qa_id": 0,
+      "article_id": 0,
+      "topic": "earnings|ma|personnel|market|policy|other",
+      "question": "What was Marriott's revised full-year profit forecast range after reporting second-quarter results?",
+      "reference_answer": "$1.92 to $2.03 a share",
+      "predicted_answer": "Marriott International Inc. (MAR) revised its full-year profit forecast range to $1.92 to $2.03 per share after reporting second-quarter results, which missed both analysts' estimates and the company's own previous guidance (Source 1).",
+      "context_used": [
+        "Marriott International Inc. (MAR) , the largest publicly traded U.S. hotel chain, cut its full-year profit forecast afte",
+        ", the chain controlled by the Pritzker family, yesterday said its second-quarter profit almost tripled as demand climbed",
+        "according to the statement. Marriott in May projected second-quarter earnings of 55 cents to 59 cents a share and said i",
+        "the $2.04 that analysts are estimating and the company\u2019s own previous guidance of $1.93 to $2.08. Slowing demand from bu",
+        "dex. Profit Forecast Worldwide net sales rose 19 percent to $1.21 billion in the quarter. Analysts estimated $1.2 billio"
+      ],
+      "retrieved_art_ids": [
+        0,
+        0,
+        0,
+        0,
+        1966
+      ],
+      "source_hit": true,
+      "top1_score": 0.8068,
+      "latency_ms": 63184.1,
+      "method": "vanilla_rag",
+      "faithfulness": 0.33,
+      "answer_relevance": 0.9,
+      "context_precision": 0.4,
+      "triad_avg": 0.543
+    },
+    {
+      "qa_id": 1,
+      "article_id": 250,
+      "topic": "earnings|ma|personnel|market|policy|other",
+      "question": "What is the percentage of direct holding that Mvelaphanda Group Ltd. will retain in Life Healthcare after the restructuring?",
+      "reference_answer": "A 26.6 percent direct holding",
+      "predicted_answer": "Mvelaphanda Group Ltd. will retain a 26.6 percent direct holding in Life Healthcare after the restructuring (Source 2).",
+      "context_used": [
+        "and Mvelaphanda\u2019s assets will be a 26.6 percent direct holding in Life Healthcare.",
+        "Mvelaphanda Group Ltd. and Brimstone Investment Corp. Ltd. plan to list their health interests in a separate entity on t",
+        "ne-hundredth of a percentage point. Swiss Re started providing a breakdown for reinsurance, corporate solutions and Admi",
+        "ually had new job growth in other businesses,\u201d Houser wrote in an e-mail. \u201cWe also were able to reabsorb far more employ",
+        "ts\u2019 use of medicines. Their profits are tied to cutting their clients\u2019 drug costs. Spokesman for the attorneys general o"
+      ],
+      "retrieved_art_ids": [
+        250,
+        250,
+        3938,
+        195,
+        2506
+      ],
+      "source_hit": true,
+      "top1_score": 0.7851,
+      "latency_ms": 16340.4,
+      "method": "vanilla_rag",
+      "faithfulness": 0.33,
+      "answer_relevance": 1.0,
+      "context_precision": 0.8,
+      "triad_avg": 0.71
+    },
+    {
+      "qa_id": 2,
+      "article_id": 500,
+      "topic": "earnings|ma|personnel",
+      "question": "What is the amount Paragon Shipping Inc. owes on one of its dry-bulk commodity vessels as of Sept. 30, according to Robert J. Perri?",
+      "reference_answer": "$24 million",
+      "predicted_answer": "According to Source 1, Paragon Shipping Inc. owed $24 million on one of its carriers, the Friendly Seas, as of Sept. 30. This information was provided by Robert J. Perri, the company's financial officer.",
+      "context_used": [
+        "Paragon Shipping Inc. (PRGN) , a Marshall Islands-incorporated owner of 16 vessels that haul dry-bulk commodities, owes ",
+        "t to 29.5 Singapore cents. The company said it has placed an order for three offshore support vessels, valued S$27 milli",
+        "11,593 a day, down 65 percent from last year, bourse data show. The surge in U.S. exports is also boosting earnings on t",
+        "g the Argus Bulletin Board. Deals were done from $767 to $769 a ton, the survey showed. That\u2019s above yesterday\u2019s range a",
+        "5.80 euros on Aug. 15, according to PJK International BV, a researcher, said by e-mail. A 2,000-ton barge can only load "
+      ],
+      "retrieved_art_ids": [
+        500,
+        4643,
+        2907,
+        1007,
+        166
+      ],
+      "source_hit": true,
+      "top1_score": 0.7855,
+      "latency_ms": 25294.3,
+      "method": "vanilla_rag",
+      "faithfulness": 0.33,
+      "answer_relevance": 1.0,
+      "context_precision": 0.8,
+      "triad_avg": 0.71
+    },
+    {
+      "qa_id": 3,
+      "article_id": 750,
+      "topic": "earnings|ma|personnel|market|policy|other",
+      "question": "What percentage of the U.S. gross domestic product was spent on health care in 2011?",
+      "reference_answer": "17.7 percent",
+      "predicted_answer": "According to Source 1, \"The U.S. spent 17.7 percent of its gross domestic product on health care in 2011.\"",
+      "context_used": [
+        "th the status quo can't be repeated often enough: The U.S. spent 17.7 percent of its gross domestic product on health ca",
+        "re the inadequacy of American health care through the amount of health-care resources that are available to the populati",
+        "said at today\u2019s meeting. FDA spending for fiscal year 2012 was set at $2.497 billion, up 2 percent from this year. The U",
+        "aries as part of future budget deliberations.\u201d The Congressional Budget Office said Feb. 5 that Medicare spending grew i",
+        "t money is spent badly. U.S. government health-care spending alone reached $4,066 per person last year -- more than any "
+      ],
+      "retrieved_art_ids": [
+        750,
+        750,
+        1413,
+        3327,
+        750
+      ],
+      "source_hit": true,
+      "top1_score": 0.7494,
+      "latency_ms": 16417.6,
+      "method": "vanilla_rag",
+      "faithfulness": 0.0,
+      "answer_relevance": 0.9,
+      "context_precision": 0.8,
+      "triad_avg": 0.567
+    },
+    {
+      "qa_id": 4,
+      "article_id": 1000,
+      "topic": "earnings|ma|personnel",
+      "question": "Will the Swiss National Bank defend the 1.20 franc cap on the Swiss franc versus the euro with utmost determination?",
+      "reference_answer": "Yes, according to Philipp Hildebrand, the SNB president.",
+      "predicted_answer": "Yes, the Swiss National Bank will defend the 1.20 franc cap on the Swiss franc versus the euro with utmost determination. This is explicitly stated by Philipp Hildebrand, president of the Swiss National Bank, in Source 1: \"We will defend the cap with the utmost determination.\"",
+      "context_used": [
+        "Switzerland \u2019s central bank is determined to maintain the cap on the Swiss franc introduced earlier this month to help e",
+        "e are in an exceptional situation that required exceptional measures.\u201d The Swiss National Bank on Sept. 6 introduced a c",
+        "raise the ceiling on the franc. Today\u2019s remarks are the first made in public by a SNB official after the central bank im",
+        "he euro on Aug. 9 on investor concern that European governments may be unable to contain the region\u2019s debt crisis. The f",
+        "declined 0.2 percent after capping a three-day gain of 7.6 percent yesterday, the biggest since March 2009. Swiss Franc "
+      ],
+      "retrieved_art_ids": [
+        1000,
+        1000,
+        1000,
+        1000,
+        1633
+      ],
+      "source_hit": true,
+      "top1_score": 0.7206,
+      "latency_ms": 25582.3,
+      "method": "vanilla_rag",
+      "faithfulness": 0.0,
+      "answer_relevance": 1.0,
+      "context_precision": 0.8,
+      "triad_avg": 0.6
+    },
+    {
+      "qa_id": 5,
+      "article_id": 1250,
+      "topic": "earnings|ma|personnel|market|policy|other",
+      "question": "What was the main criticism of Apple's product lineup under Tim Cook compared to Steve Jobs' era?",
+      "reference_answer": "The constant refrain is that Apple has not introduced a disruptive product since Steve Jobs passed away.",
+      "predicted_answer": "The main criticism of Apple's product lineup under Tim Cook, compared to Steve Jobs' era, is that Cook has not introduced any disruptive new products since taking over. Critics argue that Apple has not had a significant innovation like the iPhone or iPad during Cook's tenure, despite the company's past track record and current market dominance (Source 4). Some also suggest that Apple has been resting on its laurels and is becoming stale, with top executives leaving the company (Source 2).",
+      "context_used": [
+        "on the planet, based simply on what it has achieved in the last six years. Tim Cook is capitalizing on the potential of ",
+        "til it does. Some people are saying that Tim Cook just ain't up to it, that he's no Steve Jobs. One commenter on a popul",
+        "If you want a brilliant lesson in focus and discipline, watch Tim Cook right now. Some investors are dissatisfied with A",
+        "top execs are fleeing. What the naysayers are overlooking or ignoring is that one could have made a list for Steve Jobs ",
+        "ar and they'd say Apple's days are over because it's just bet its future on an industry it knows nothing about. Not unli"
+      ],
+      "retrieved_art_ids": [
+        1250,
+        1250,
+        1250,
+        1250,
+        1250
+      ],
+      "source_hit": true,
+      "top1_score": 0.7585,
+      "latency_ms": 37380.1,
+      "method": "vanilla_rag",
+      "faithfulness": 0.8,
+      "answer_relevance": 0.8,
+      "context_precision": 0.2,
+      "triad_avg": 0.6
+    },
+    {
+      "qa_id": 6,
+      "article_id": 1500,
+      "topic": "earnings|ma|personnel",
+      "question": "What was the amount of one-time charges reported by Dixons Retail Plc in pounds?",
+      "reference_answer": "309.4 million",
+      "predicted_answer": "The one-time charges reported by Dixons Retail Plc were 309.4 million pounds. (Source 1)",
+      "context_used": [
+        "Dixons Retail Plc (DXNS) , Europe\u2019s second- largest electronics retailer, posted a full-year loss after one- time charge",
+        "y in a statement. The firm didn\u2019t properly weigh security type and transaction size in evaluating whether charges were a",
+        "s and regulators in the U.S. and U.K. Initially prosecutors were aiming for as soon as Labor Day, the U.S. holiday on Se",
+        "online business and Greek unit Kotsovolos, it said. Dixons fell as much as 4.4 percent in London trading. The loss is th",
+        "he Christmas period. \u201cThe U.K. business is the big struggle,\u201d said William Hobbs, who helps manage 164 billion pounds in"
+      ],
+      "retrieved_art_ids": [
+        1500,
+        4070,
+        3101,
+        1500,
+        1329
+      ],
+      "source_hit": true,
+      "top1_score": 0.5916,
+      "latency_ms": 18299.0,
+      "method": "vanilla_rag",
+      "faithfulness": 0.0,
+      "answer_relevance": 0.9,
+      "context_precision": 0.2,
+      "triad_avg": 0.367
+    },
+    {
+      "qa_id": 7,
+      "article_id": 1750,
+      "topic": "earnings|ma|personnel|market|policy|other",
+      "question": "What percentage decrease did London home sellers experience in asking prices from the previous month?",
+      "reference_answer": "4 percent",
+      "predicted_answer": "London home sellers experienced a 4 percent decrease in asking prices from the previous month. (Source 1)",
+      "context_used": [
+        "London home sellers cut asking prices by the most for a December in five years as an influx of supply and seasonal facto",
+        "dissipate.\u201d The supply of properties, meanwhile, rose by 4.8 percent, up from a 3.6 percent pace in March, taking the in",
+        "Sales (NHSLTOT) of new U.S. houses in February capped the best back-to-back months in more than four years, spurred by n",
+        "A U.K. house-price index fell to a six-month low in April as demand weakened after a stamp-duty exemption for first-time",
+        "U.K. house prices may fall by as much as 25 percent by the end of next year, the Mail on Sunday said, citing a report to"
+      ],
+      "retrieved_art_ids": [
+        1750,
+        2373,
+        1406,
+        4695,
+        1112
+      ],
+      "source_hit": true,
+      "top1_score": 0.7747,
+      "latency_ms": 13551.3,
+      "method": "vanilla_rag",
+      "faithfulness": 0.33,
+      "answer_relevance": 0.5,
+      "context_precision": 0.8,
+      "triad_avg": 0.543
+    },
+    {
+      "qa_id": 8,
+      "article_id": 2000,
+      "topic": "earnings|ma|personnel",
+      "question": "How much money did the U.S. Energy Department award to FDC Enterprises Inc.?",
+      "reference_answer": "$6 million",
+      "predicted_answer": "The provided context does not contain any information about the U.S. Energy Department awarding money to FDC Enterprises Inc. Therefore, based on the given sources, it is impossible to determine how much money was awarded to this company by the U.S. Energy Department.",
+      "context_used": [
+        "have appeared in a government database called Federal Business Opportunities , available at www.fbo.gov. It\u2019s unclear wh",
+        "bruary, the department has spent about $623 million, or less than 42 percent, of the money for the cleaner- coal program",
+        "e gas that most scientists think is making the planet hotter. Energy officials hadn\u2019t \u201cadequately documented the approva",
+        "faced technical challenges or were unable to raise the required amount of private capital to win the government money. T",
+        "lean Energy The stimulus provided a record $90 billion for clean-energy programs, about $35 billion of which went to the"
+      ],
+      "retrieved_art_ids": [
+        1911,
+        415,
+        415,
+        415,
+        415
+      ],
+      "source_hit": false,
+      "top1_score": 0.5716,
+      "latency_ms": 24145.6,
+      "method": "vanilla_rag",
+      "faithfulness": 0.0,
+      "answer_relevance": 0.0,
+      "context_precision": 0.8,
+      "triad_avg": 0.267
+    },
+    {
+      "qa_id": 9,
+      "article_id": 2250,
+      "topic": "earnings|ma|personnel",
+      "question": "What was the increase in payrolls in October compared to the median forecast of 91 economists?",
+      "reference_answer": "204,000",
+      "predicted_answer": "The retrieved context does not provide enough information to directly answer this question. While it mentions that U.S. payrolls increased by 171,000 workers in October, there is no specific reference to how this figure compares to the median forecast of 91 economists surveyed by Bloomberg.",
+      "context_used": [
+        "tatistics office said Oct. 31. The region\u2019s debt crisis has pushed at least five nations into recessions and economic co",
+        "in October from a year earlier, slower than the 7.8 percent forecast in a Bloomberg survey. Industrial output grew 5 per",
+        "September climbed 0.4 percent to 1,380.5 at 9:10 a.m. in New York. Another report today showed a measure of U.S. manufac",
+        "to payrolls in April after a gain of 216,000 the prior month, according to the median forecast of economists surveyed by",
+        "e proceeds of principal payments from its agency mortgage-backed securities and agency debt. Slowing Growth Economic gro"
+      ],
+      "retrieved_art_ids": [
+        4752,
+        3589,
+        2945,
+        2033,
+        4484
+      ],
+      "source_hit": false,
+      "top1_score": 0.7405,
+      "latency_ms": 28912.6,
+      "method": "vanilla_rag",
+      "faithfulness": 0.0,
+      "answer_relevance": 0.2,
+      "context_precision": 0.2,
+      "triad_avg": 0.133
+    },
+    {
+      "qa_id": 10,
+      "article_id": 2500,
+      "topic": "earnings|ma|personnel|market|policy|other",
+      "question": "What is the name of the initiative announced by Governor Andrew Cuomo to bring atom-sized computer-chip research to Oneida County?",
+      "reference_answer": "nanotechnology",
+      "predicted_answer": "The name of the initiative announced by Governor Andrew Cuomo to bring atom-sized computer-chip research to Oneida County is \"Nano Utica\". This information can be found in Source 2.",
+      "context_used": [
+        "A continent away from Silicon Valley, Governor Andrew Cuomo is promoting New York \u2019s Tech Valley as an engine of the ups",
+        ", through Saratoga County. That\u2019s where Milpitas, California-based GlobalFoundries started building its chip plant in 20",
+        "miconductor development that drew chip-maker GlobalFoundries Inc. to the Albany area, helping turn Saratoga County into ",
+        "cost $323 million over three years, builds on how research at the state\u2019s College of Nanoscale Science and Engineering i",
+        "New York Governor Andrew Cuomo called for an income-tax overhaul that would place a higher burden on top earners as the "
+      ],
+      "retrieved_art_ids": [
+        2500,
+        2500,
+        2500,
+        2500,
+        3970
+      ],
+      "source_hit": true,
+      "top1_score": 0.7621,
+      "latency_ms": 18994.6,
+      "method": "vanilla_rag",
+      "faithfulness": 0.0,
+      "answer_relevance": 1.0,
+      "context_precision": 0.8,
+      "triad_avg": 0.6
+    },
+    {
+      "qa_id": 11,
+      "article_id": 2750,
+      "topic": "earnings|ma|personnel|market|policy|other",
+      "question": "What is the current price of ICL shares, and what is the lowest intraday level since July 2009?",
+      "reference_answer": "ICL shares declined 1.8 percent to 35.44 shekels at 11:43 a.m. in Tel Aviv, the lowest intraday level since July 2009.",
+      "predicted_answer": "Based on the provided context, there's no information about ICL shares' current price or their lowest intraday level since July 2009. The sources discuss different stocks (Ctrip, Renren, Delek Group, etc.) and indices (Shanghai Composite, TA-25), but none of them mention ICL shares. Therefore, with the given information, it's not possible to answer the question about ICL shares' current price or their lowest intraday level since July 2009.",
+      "context_used": [
+        "rk Mercantile Exchange. Prices are up 20 percent from this year\u2019s intraday low. To contact the reporter on this story: L",
+        "ion data this week. Ctrip surged 20 percent to $43.30 last week, the most since May 10. Goldman Sachs Group Inc. boosted",
+        "in visiting Gaza while there. EQUITY MOVERS: * Delek Group Ltd. (DLEKG)  said it will buy all 353,988 shares, or 7.06 pe",
+        "since Bloomberg began to compile the data since 2006. The 14-day relative strength measure for the index, measuring how ",
+        "1 as of 1:25 p.m. London time. Brent for August settlement on the London-based ICE Futures Europe exchange lost as much "
+      ],
+      "retrieved_art_ids": [
+        2854,
+        2615,
+        516,
+        4478,
+        4238
+      ],
+      "source_hit": false,
+      "top1_score": 0.5976,
+      "latency_ms": 47986.6,
+      "method": "vanilla_rag",
+      "faithfulness": 0.0,
+      "answer_relevance": 0.0,
+      "context_precision": 0.2,
+      "triad_avg": 0.067
+    },
+    {
+      "qa_id": 12,
+      "article_id": 3000,
+      "topic": "earnings|ma|personnel|market|policy|other",
+      "question": "What is the reason given by Standard & Poor's for potentially lowering New Jersey's credit rating?",
+      "reference_answer": "should state revenue projections turn out to be optimistic, resulting in additional short-term budgetary maneuvering to close the gap",
+      "predicted_answer": "Standard & Poor's may lower New Jersey's credit rating \"should state revenue projections turn out to be optimistic, resulting in additional short-term budgetary maneuvering to close the gap, which would indicate continued fiscal pressures on the state.\" This is stated in Source 2.",
+      "context_used": [
+        "by California Governor Jerry Brown, according to the New Jersey treasurer\u2019s office. New Jersey\u2019s credit strengths includ",
+        "New Jersey had its credit outlook revised to negative from stable by Standard & Poor\u2019s, which said revenue assumptions i",
+        "2012 budget forecast, Rosen said in a memo to lawmakers earlier this month. Rising pension costs and a slow recovery led",
+        "rns with the credit trends as it seems like the Nevada, Colorado and Arizona franchises are improving but California, Te",
+        "company affirmed the state\u2019s general- obligation bond rating of AA-, the fourth-highest level. Christie, a first-term Re"
+      ],
+      "retrieved_art_ids": [
+        3000,
+        3000,
+        3000,
+        4769,
+        3000
+      ],
+      "source_hit": true,
+      "top1_score": 0.6987,
+      "latency_ms": 25976.9,
+      "method": "vanilla_rag",
+      "faithfulness": 0.33,
+      "answer_relevance": 1.0,
+      "context_precision": 0.8,
+      "triad_avg": 0.71
+    },
+    {
+      "qa_id": 13,
+      "article_id": 3250,
+      "topic": "earnings|ma|personnel|market|policy|other",
+      "question": "What was the rate of India's consumer-price inflation in March?",
+      "reference_answer": "9.47%",
+      "predicted_answer": "The rate of India's consumer-price inflation in March was 9.47 percent, as reported by the central statistics office on April 30, 2012 (Source 1).",
+      "context_used": [
+        "Indian consumer-price inflation accelerated in March as the cost of egg, vegetables, fish and meat products rose, the go",
+        "India\u2019s government bonds advanced, pushing the benchmark 10-year yield to a 34-month low, on speculation slowing inflati",
+        "India \u2019s central bank chief said policy makers need to reduce the nation\u2019s inflation rate by about 2 percentage points, ",
+        "Indian inflation unexpectedly accelerated in April, crimping the central bank\u2019s scope to bolster economic growth by exte",
+        "ntil September, there may not be any more cut by the Reserve Bank of India.\u201d She expects interest rates to be cut by a f"
+      ],
+      "retrieved_art_ids": [
+        3250,
+        2411,
+        4473,
+        31,
+        3250
+      ],
+      "source_hit": true,
+      "top1_score": 0.792,
+      "latency_ms": 18327.0,
+      "method": "vanilla_rag",
+      "faithfulness": 0.0,
+      "answer_relevance": 0.0,
+      "context_precision": 0.8,
+      "triad_avg": 0.267
+    },
+    {
+      "qa_id": 14,
+      "article_id": 3500,
+      "topic": "earnings|ma|personnel|market|policy|other",
+      "question": "What was the percentage increase in Averlogic Technology's unconsolidated sales from June 2010 to June 2011?",
+      "reference_answer": "3.18%",
+      "predicted_answer": "The percentage increase in Averlogic Technology's unconsolidated sales from June 2010 to June 2011 was 3.18%. This is stated explicitly in Source 2, Article 3500:\n\n\"Sales       5,517      5,347   YOY%       3.18%\"",
+      "context_used": [
+        "0.5 percent gain in February, also up from last week\u2019s estimates. Business investment in equipment and software climbed ",
+        "AVERLOGIC TECHNO said unconsolidated sales in June rose 3.18% to NT$5,517,000 from NT$5,347,000, according to a statemen",
+        "seven industries includes transportation equipment, food, petroleum and coal products, and machinery manufacturing. Comb",
+        "$609.8 billion. This was at the highest level since the series was first published on a NAICS basis in 1992 and followed",
+        "of the last three months, led the increase, up $0.6 billion or 0.8 percent to $72.2 billion. Unfilled Orders Unfilled or"
+      ],
+      "retrieved_art_ids": [
+        1704,
+        3500,
+        154,
+        4661,
+        4661
+      ],
+      "source_hit": true,
+      "top1_score": 0.5961,
+      "latency_ms": 37888.7,
+      "method": "vanilla_rag",
+      "faithfulness": 0.0,
+      "answer_relevance": 1.0,
+      "context_precision": 0.2,
+      "triad_avg": 0.4
+    },
+    {
+      "qa_id": 15,
+      "article_id": 3750,
+      "topic": "earnings|ma|personnel|market|policy|other",
+      "question": "What event prompted Richard Vines and John Sweeney, both graduates of the London School of Economics, to travel undercover with a group of students in North Korea?",
+      "reference_answer": "The BBC documentary 'North Korea Undercover' was broadcast despite the LSE's request not to, as the participants had apparently consented.",
+      "predicted_answer": "The event that prompted Richard Vines and John Sweeney, both graduates of the London School of Economics, to travel undercover with a group of students in North Korea was their involvement in the BBC documentary \"North Korea Undercover\". The documentary, which was broadcast despite concerns raised by the London School of Economics about potential risks to the students involved, featured John Sweeney visiting various tourist sites in North Korea while breathlessly describing it as the \"most dangerous place on earth\". Richard Vines, also an LSE graduate and former BBC employee like Sweeney, is mentioned in the context but his specific role or involvement in the documentary is not explicitly stated. (Source 1)",
+      "context_used": [
+        "week as I watched the BBC documentary \u201c North Korea Undercover ,\u201d in which the reporter John Sweeney breathlessly whispe",
+        "e 14 professors involved in the project have provided the funding for the university, the Sunday Times reported. To cont",
+        "gh in London at  jriseborough@bloomberg.net ; Michael Kohn in Singapore at  mkohn5@bloomberg.net  To contact the editor ",
+        "tory: Mario Parker in Chicago at  mparker22@bloomberg.net  To contact the editor responsible for this story: Dan Stets a",
+        "posing as applicants. To contact the reporter on this story: John Lauerman in Boston at  jlauerman@bloomberg.net. To con"
+      ],
+      "retrieved_art_ids": [
+        3750,
+        466,
+        1566,
+        3147,
+        1158
+      ],
+      "source_hit": true,
+      "top1_score": 0.6453,
+      "latency_ms": 75127.7,
+      "method": "vanilla_rag",
+      "faithfulness": 0.33,
+      "answer_relevance": 0.8,
+      "context_precision": 0.4,
+      "triad_avg": 0.51
+    },
+    {
+      "qa_id": 16,
+      "article_id": 4000,
+      "topic": "earnings|ma|personnel|market|policy|other",
+      "question": "What was the percentage change of OAO Inter RAO UES stock price to its highest level since April 11?",
+      "reference_answer": "4.7 percent",
+      "predicted_answer": "The provided context does not contain any information about OAO Inter RAO UES or its stock price. Therefore, it is impossible to determine the percentage change of OAO Inter RAO UES stock price to its highest level since April 11 based on the given sources.",
+      "context_used": [
+        "The following companies may have unusual price changes in Asian trading tomorrow. Stock symbols are in parentheses and s",
+        "Following are the highlights for the equity derivative market activity at the National Stock Exchange and the Bombay Sto",
+        ".6 percent to A$12.91 on the Australian stock exchange at the 4:10 p.m. market close today, compared with a 0.2 percent ",
+        "ed date for the conclusion of its merger with Lan. Tam still needs the registration of a share swap to complete the proc",
+        "Following are the highlights for the equity derivative market activity at the National Stock Exchange and the Bombay Sto"
+      ],
+      "retrieved_art_ids": [
+        150,
+        3026,
+        992,
+        4987,
+        2097
+      ],
+      "source_hit": false,
+      "top1_score": 0.5661,
+      "latency_ms": 30806.5,
+      "method": "vanilla_rag",
+      "faithfulness": 0.0,
+      "answer_relevance": 0.0,
+      "context_precision": 0.8,
+      "triad_avg": 0.267
+    },
+    {
+      "qa_id": 17,
+      "article_id": 4250,
+      "topic": "earnings|ma|personnel|market|policy|other",
+      "question": "What was the rate of decline in Cyprus's gross domestic product in the second quarter compared to the same period a year earlier?",
+      "reference_answer": "Non-seasonally adjusted GDP fell 5.4 percent from a year earlier.",
+      "predicted_answer": "Cyprus's GDP declined by 5.2 percent in the second quarter from a year earlier when adjusted for seasonal swings and working days, according to Source 2 (Article 4250 with sim=0.778).",
+      "context_used": [
+        "Cyprus\u2019s economic contraction deepened in the second quarter after the country agreed to wage-cuts and the closure of it",
+        "area emerged from a record-long recession in the second quarter, led by Germany and France. The 17-nation economy expand",
+        "n to avoid a second aid program, Georgiades said. \u201cWe know that we are in for a rough ride ,\u201d he said, adding that he co",
+        "dget by 2014, he said. \u201cConsidering the weak global environment we are in, there are good reasons for the new government",
+        "r to leave the government by Feb. 22. Gross domestic product fell 3.3 percent from a year earlier in the third quarter, "
+      ],
+      "retrieved_art_ids": [
+        4250,
+        4250,
+        2443,
+        1523,
+        1368
+      ],
+      "source_hit": true,
+      "top1_score": 0.8101,
+      "latency_ms": 23490.7,
+      "method": "vanilla_rag",
+      "faithfulness": 0.0,
+      "answer_relevance": 1.0,
+      "context_precision": 0.2,
+      "triad_avg": 0.4
+    },
+    {
+      "qa_id": 18,
+      "article_id": 4500,
+      "topic": "earnings|ma|personnel|market|policy|other",
+      "question": "What is the September core consumer prices index in urban areas from the Central Bank of Egypt?",
+      "reference_answer": "The article does not provide a specific number for the September core consumer prices index.",
+      "predicted_answer": "The provided context does not contain enough information to answer your question specifically about the September core consumer prices index in urban areas from the Central Bank of Egypt. The first source only mentions that it is a summary of such data, but it does not provide the actual figure or percentage change.",
+      "context_used": [
+        "Following is a summary of the September core consumer prices in urban areas from the Central Bank of Egypt in Cairo:    ",
+        "Following is a summary of Jordan\u2019s September consumer prices from the Department of Statistics in Amman. To contact the ",
+        "Following is a summary of the September CPI report from the Italian Statistics Institute in Rome:",
+        "Following is a summary of September core inflation from the Central Statistical Office in Budapest: To contact the repor",
+        "rs demand to hold Egypt\u2019s dollar- denominated debt over U.S. Treasuries climbed 13 basis points, or 0.13 of a percentage"
+      ],
+      "retrieved_art_ids": [
+        4500,
+        2001,
+        2259,
+        989,
+        904
+      ],
+      "source_hit": true,
+      "top1_score": 0.8152,
+      "latency_ms": 17752.9,
+      "method": "vanilla_rag",
+      "faithfulness": 0.0,
+      "answer_relevance": 0.0,
+      "context_precision": 0.8,
+      "triad_avg": 0.267
+    },
+    {
+      "qa_id": 19,
+      "article_id": 4750,
+      "topic": "earnings|ma|personnel",
+      "question": "What is the reason why Qatar's conventional banks want to merge their Islamic units?",
+      "reference_answer": "Because the country's central bank ordered them to stop offering Shariah-compliant services by the end of the year.",
+      "predicted_answer": "Based on the provided context, specifically Source 1 (Article 4750), Qatar's conventional banks want to merge their Islamic units into a new Islamic bank because \"the country\u2019s central bank ordered them to stop offering Shariah-compliant services by the end of the year.\" This order has prompted the banks to discuss merging their Islamic units into one entity, with each bank owning shares in the new Islamic bank. There is no other information provided that suggests an alternative reason for this merger.",
+      "context_used": [
+        "Qatar\u2019s conventional banks want to merge their Islamic units into a new Islamic bank after the country\u2019s central bank or",
+        "isions by year end on concern deposits may go toward Islamic loans. Qatar Islamic may seek to buy Islamic units of conve",
+        "eled from individuals via Islamic banks to investments,\u201d he said. \u2018Closer to Religion\u2019 Senegal is reviewing legislation ",
+        "ion of the Islamic Conference into West Africa. \u201cYou have to have a strong system in place and most West African countri",
+        "regulations, products and institutions that comply with Shariah law to accelerate the industry\u2019s development, Patrick Im"
+      ],
+      "retrieved_art_ids": [
+        4750,
+        2983,
+        1763,
+        1763,
+        1763
+      ],
+      "source_hit": true,
+      "top1_score": 0.8512,
+      "latency_ms": 42687.1,
+      "method": "vanilla_rag",
+      "faithfulness": 0.8,
+      "answer_relevance": 0.8,
+      "context_precision": 0.4,
+      "triad_avg": 0.667
+    }
+  ]
+}
